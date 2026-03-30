@@ -1,0 +1,27 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "lancereinsmith",
+  "owner": {
+    "name": "Lance Reinsmith"
+  },
+  "metadata": {
+    "description": "A Claude Code plugin marketplace for custom skills and integrations"
+  },
+  "plugins": [
+    {
+      "name": "qgenda",
+      "description": "Query the QGenda scheduling system for physician schedules, staff, shifts, requests, rotations, and more.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/lancereinsmith/claude-qgenda-plugin.git"
+      },
+      "category": "productivity",
+      "license": "MIT",
+      "keywords": [
+        "qgenda",
+        "scheduling",
+        "healthcare"
+      ]
+    }
+  ]
+}
