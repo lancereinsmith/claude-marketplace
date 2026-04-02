@@ -1,44 +1,29 @@
-# claude-marketplace
+# Claude Plugin Marketplace (v.0.1.1)
 
 A Claude Code plugin marketplace for custom skills and integrations.
 
 ## Available Plugins
 
-| Plugin | Description |
-|--------|-------------|
-| **qgenda** | Query QGenda scheduling system for physician schedules, staff, shifts, requests, rotations, and more. |
+| Plugin | Description | Install |
+|--------|-------------|---------|
+| **qgenda** | Query the QGenda scheduling system for physician schedules, staff, shifts, requests, rotations, and more. | `claude plugin install qgenda@lancereinsmith` |
 
-## Installation
+## Getting Started
 
 ```bash
 # Add the marketplace
 claude plugin marketplace add lancereinsmith/claude-marketplace
 
 # Install a plugin
-claude plugin install qgenda@lancereinsmith
+claude plugin install <plugin-name>@lancereinsmith
 ```
 
-## Updating
+## Updating the Marketplace and Plugins
 
 ```bash
+# Update the marketplace index
 claude plugin marketplace update lancereinsmith
-claude plugin update qgenda@lancereinsmith
+
+# Update a specific plugin
+claude plugin update <plugin-name>@lancereinsmith
 ```
-
-## Adding a New Plugin
-
-To add a plugin to this marketplace, add an entry to `.claude-plugin/marketplace.json`:
-
-```json
-{
-  "name": "my-plugin",
-  "description": "What it does",
-  "source": {
-    "source": "url",
-    "url": "https://github.com/owner/repo.git"
-  },
-  "category": "productivity"
-}
-```
-
-Plugins can live in their own repos — this marketplace is just the index.
