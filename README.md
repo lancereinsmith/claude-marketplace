@@ -1,4 +1,4 @@
-# Claude Plugin Marketplace (v.0.1.1)
+# Claude Plugin Marketplace (v.0.1.2)
 
 A Claude Code plugin marketplace for custom skills and integrations.
 
